@@ -38,7 +38,7 @@ h2 {
 
 section {
   color: #184464;
-  padding: 50px 20px;
+  padding: 30px 20px;
   max-width: 1200px;
 
 }
@@ -46,11 +46,6 @@ section {
 a {
   text-decoration: none;
   transition: var(--transition);
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .card {

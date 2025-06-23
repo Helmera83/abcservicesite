@@ -20,7 +20,6 @@ const App = () => {
           <Navbar/>
             <Hero />
             <main>
-
             <Services />
 
                 <Testimonial />
