@@ -19,7 +19,7 @@ body {
 }
 h1 {
   font-family: "Special Gothic Expanded One", sans-serif;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
@@ -27,19 +27,20 @@ h2 {
   color: #184464;
   font-family: 'Special Gothic Expanded One', sans-serif;
   font-size: 1.5rem;
+  justify-content: center;
+  text-align: center;
 }
 
   h3 {
-
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 section {
   color: #184464;
-  padding: 80px 20px;
+  padding: 50px 20px;
   max-width: 1200px;
-  margin: auto;
+
 }
 
 a {
