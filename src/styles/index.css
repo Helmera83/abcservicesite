@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Expanded+One&display=swap');:root {
-  --primary-blue: #303034;
+  --primary-blue: #242222;
   --primary-orange: #cc511c;
   --bg-light: #F8FAFF;
   --card-bg: rgba(255, 255, 255, 0.95);
@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 0;
+  align-content: center;
   font-family: var(--font-sans), serif;
   background-color: var(--bg-light);
   scroll-behavior: smooth;

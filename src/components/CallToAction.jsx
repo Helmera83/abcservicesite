@@ -1,6 +1,5 @@
 import React from 'react';
-import bgImage from "../assets/emergency.png"
-import '../assets/cta.png'
+import bgImage from "../assets/emergency.png";
 import '../styles/App.css';
 
 const CallToAction = () => (
@@ -11,8 +10,7 @@ const CallToAction = () => (
     >
 
         <div className="cta-overlay">
-            <h2>24/7 Emergency HVAC Support</h2>
-            <p>We’re ready when you need us — book a technician now!</p>
+            <p>24/7 Emergency HVAC Support</p>
             <a href="#contact" className="btn-cta">Book Service Now</a>
         </div>
     </section>

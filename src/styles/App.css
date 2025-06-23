@@ -230,35 +230,6 @@ hero {
     animation: gradient linear infinite;
 }
 
-.cta-section {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #242222;
-    position: relative;
-    text-align: center;
-}
-
-.cta-overlay {
-    background: rgb(242, 245, 245);
-    width: 75%;
-    padding: 2rem;
-    border-radius: 12px;
-    display: inline-block;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.39);
-}
-
-.btn-cta {
-    background: linear-gradient(90deg, rgba(204, 81, 28, 0.75), rgba(27, 54, 84, 0.86));
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 1rem;
-    display: inline-block;
-}
 
 .video {
     width: auto;
@@ -345,28 +316,47 @@ hero {
     color: #555;
 }
 
-.footer-modern {
-    font-size: 0.9rem;
-}
 
-.footer-modern {
-    background: var(--primary-blue);
-    color: white;
-    padding: 30px 20px;
+.cta-section {
+    font-family: "Special Gothic Expanded One",sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: relative;
     text-align: center;
+    font-size: 2rem;
 }
 
-.footer-inner > div {
-    margin: 5px 0;
+.cta-overlay {
+    background: rgba(39, 40, 40, 0.28);
+    width: 75%;
+    padding: 2rem;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.39);
 }
 
-.footer-inner a {
+.btn-cta {
+    font-family: "Inter",sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(90deg, rgba(204, 81, 28, 0.75), rgba(27, 54, 84, 0.86));
     color: white;
-    opacity: 0.9;
-    transition: opacity 0.3s;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
-
-.footer-inner a:hover {
-    opacity: 1;
+.footer-modern {
+    background: rgba(44, 44, 44, 0.78);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
 }
-
