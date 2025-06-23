@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(27, 54, 84, 0.2);
+    background: rgba(27, 54, 84, 0.58);
     backdrop-filter: blur(10px);
     padding: 1rem 2rem;
     top: 0;
@@ -12,11 +12,10 @@
 
 .logo {
     font-family: "Special Gothic Expanded One",sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
-/* Menu button (hamburger) */
 .menu-toggle {
     font-size: 1.5rem;
     background: none;
@@ -31,9 +30,11 @@
     list-style: none;
     display: flex;
     gap: 2rem;
+
 }
 
 .nav-links li a {
+
     color: #fa4503;
     text-decoration: none;
     font-weight: 500;
@@ -48,7 +49,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #1b3654;
+        background-color: rgba(27, 59, 94, 0.19);
         width: 100%;
         flex-direction: column;
         gap: 1rem;
@@ -183,8 +184,7 @@ h1.special-heading {
     align-items: center;
     justify-content: center;
     border-radius: 1.25rem;
-    font-weight: 500;
-    backdrop-filter: blur(10px);
+    font-weight: 400;
     transition: box-shadow 0.5s ease-out;
     overflow: hidden;
     cursor: pointer;
@@ -284,6 +284,7 @@ h1.special-heading {
 }
 
 .services-modern h2 {
+    font-family:"Inter", sans-serif;
     color: var(--primary-blue);
     margin-bottom: 40px;
 }
@@ -314,12 +315,14 @@ h1.special-heading {
 
 
 .testimonial-modern {
+
     padding: 60px 20px;
     text-align: center;
     background: var(--bg-light);
 }
 
 .testimonial-modern h2 {
+    font-family:"Inter", sans-serif;
     color: var(--primary-blue);
     margin-bottom: 40px;
 }

@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Special+Gothic+Expanded+One&display=swap');:root {
-  --primary-blue: #ffffff;
+  --primary-blue: #303034;
   --primary-orange: #cc511c;
   --bg-light: #F8FAFF;
   --card-bg: rgba(255, 255, 255, 0.95);
@@ -24,15 +24,19 @@ h1 {
 }
 
 h2 {
+  color: #184464;
   font-family: 'Special Gothic Expanded One', sans-serif;
   font-size: 1.5rem;
 }
+
   h3 {
+
   font-weight: 600;
   letter-spacing: 1px;
 }
 
 section {
+  color: #184464;
   padding: 80px 20px;
   max-width: 1200px;
   margin: auto;

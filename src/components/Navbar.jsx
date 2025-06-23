@@ -13,7 +13,7 @@ const Navbar = () => {
                     animationSpeed={7}
                     showBorder={false}
                     className="custom-class"
-                > A&B Contract Services
+                > A&B
                 </GradientText>
             </div>
             <button
