@@ -2,6 +2,7 @@ import React from 'react';
 import "../assets/my hero background.mp4";
 import "../styles/App.css";
 import GradientText from "../components/GradientText.jsx";
+import StarBorder from "./StarBorder.jsx";
 
 const Hero = () => {
     return (
@@ -22,9 +23,10 @@ const Hero = () => {
                     <div className="some-text">
                         <p>With Professional HVAC installation and Repair</p>
                     </div>
-                    <a href="#contact" className="btn-white">
-                        Get a Free Estimate
-                    </a>
+                    <div className="button-group">
+                        <button className="btn-gradient">Book Now</button>
+                        <button className="btn-outline">Learn More</button>
+                    </div>
                 </div>
             </div>
         </div>

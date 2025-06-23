@@ -1,79 +1,70 @@
-.header-modern {
+.navbar {
     position: sticky;
-    top: 0;
-    background: linear-gradient(90deg, rgba(204, 81, 28, 0.2), rgba(27, 54, 84, 0.2));
-    backdrop-filter: blur(10px);
-    z-index: 100;
-    width: 100%;
-}
-
-.header-inner {
-    max-width: 1200px;
-    margin: auto;
     display: flex;
-    align-items: center;
-    padding: 10px 20px;
     justify-content: space-between;
-}
-
-.nav-modern a {
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.nav-modern a:hover {
-    color: var(--primary-orange);
-}
-
-.contact-modern a {
-    margin-left: 15px;
-    font-size: 0.9rem;
-}
-
-.nav-modern a {
-    position: relative;
-    padding-bottom: 4px;
-}
-
-.nav-modern a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--primary-orange);
-    transition: width 0.3s;
-}
-
-.nav-modern a:hover::after {
-    width: 100%;
+    align-items: center;
+    background: rgba(27, 54, 84, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
+    font-family: "Special Gothic Expanded One",sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Menu button (hamburger) */
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #fa4503;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {
-    .header-inner {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1b3654;
+        width: 100%;
         flex-direction: column;
-        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        display: none;
     }
 
-    .nav-modern {
-        margin-top: 10px;
-        flex-wrap: wrap;
-        gap: 10px;
+    .nav-links.active {
+        display: flex;
     }
 
-    .contact-modern {
-        margin-top: 10px;
+    .nav-links li {
+        text-align: left;
     }
 }
 
-/* Container stays the same */
 .hero {
     position: relative;
     height: 100vh;
@@ -86,14 +77,10 @@
     overflow: hidden;
 }
 
-
-/* ✨ Animated content */
 .hero-content {
     display: flex;
     position: relative;
     z-index: 1;
-
-
 }
 h1.special-heading {
     font-family: 'Special Gothic Expanded One', sans-serif;
@@ -115,37 +102,78 @@ h1.special-heading {
     object-fit: cover;
     z-index: -1;
 }
-
-.btn-white {
-    background: linear-gradient(90deg, rgba(204, 81, 28, 0.85), rgba(27, 54, 84, 0.8));
-    color: var(--primary-blue);
-    padding: 14px 32px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: var(--transition);
-    box-shadow: var(--shadow);
-    display: inline-block;
+.button-group {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
 }
 
-.btn-white:hover {
-    background-color: var(--primary-orange);
+/* 1. Gradient Button */
+.btn-gradient {
+    background: #1869c4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 999px; /* round button */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+}
+
+/* 2. Outline Button */
+.btn-outline {
+    background: transparent;
+    color: #cc511c;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #cc511c;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #cc511c;
     color: white;
 }
 
+
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.2rem;
+    .hero-content h1 {
+        font-size: 2rem;
     }
 
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .btn-white {
-        width: 100%;
+    .hero-content p {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .btn-cta {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+.hero-btn {
+    background: transparent;
+
+}
 .animated-gradient-text {
     position: relative;
     margin: 0 auto;
