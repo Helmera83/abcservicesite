@@ -66,7 +66,7 @@
     }
 }
 
-hero {
+.hero {
     min-height: 100vh;;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@ hero {
     max-width: 700px;
 }
 .button-group {
-    position: left;
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -207,7 +207,7 @@ hero {
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
@@ -215,7 +215,7 @@ hero {
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -286,7 +286,7 @@ hero {
 }
 
 .slick-dots li button:before {
-    color: none;
+    color: transparent;
 }
 
 .testimonial-modern .slick-slide > div {
@@ -349,14 +349,36 @@ hero {
     margin-bottom: 1rem;
     display: inline-block;
 }
-.footer-modern {
-    background: rgba(44, 44, 44, 0.78);
-    padding: 30px 20px;
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+.footer-top {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-left h4,
+.footer-right h4 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #bbb;
 }
