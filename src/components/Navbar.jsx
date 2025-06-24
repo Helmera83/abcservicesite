@@ -9,26 +9,13 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="logo">
                 <GradientText
-                    colors={["#ee6d3c", "#467af3", "#1a00ff", "#ff4500", "#ff100f"]}
+                    colors={["#ee6d3c", "#467af3", "#1a00ff", "#7cfab7", "#ff100f"]}
                     animationSpeed={7}
                     showBorder={false}
                     className="custom-class"
                 > A&B
                 </GradientText>
-            </div>
-            <button
-                className="menu-toggle"
-                onClick={() => setMenuOpen(!menuOpen)}
-                aria-label="Toggle menu"
-            >
-                ☰
-            </button>
-            <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            </div><p>Contract Services</p>
         </nav>
     );
 };

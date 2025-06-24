@@ -1,10 +1,10 @@
 import React from 'react';
-
 import "../styles/App.css";
 import StarBorder from "./StarBorder.jsx";
+
 const Hero = () => {
     return (
-        <hero>
+        <section className="hero">
             <div className="hero-content">
                 <video
                     className="hero-video"
@@ -23,7 +23,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </hero>
+        </section>
     );
 };
 
