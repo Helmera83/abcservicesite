@@ -1,23 +1,29 @@
 import React from 'react';
-import './Footer.css';
+import"../styles/App.css"
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-top">
                 <div className="footer-left">
-                    <h4>Contact Us</h4>
-                    <p>Email: info@example.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>Address: 123 Main St, Dallas, TX</p>
+                    <div className="info">
+                        <h4>Contact Us</h4>
+                        <p>Email: abservices@contractor.net</p>
+                        <p>Phone: (580) 380-0080</p>
+                    </div>
                 </div>
                 <div className="footer-right">
-                    <h4>Your Trusted DFW Partner</h4>
-                    <p>We bring solutions that move your business forward.</p>
+                    <h4>Serving DFW and Texoma</h4>
+                    <div className="footer-badges">
+                        <img src="/badges/5.png" alt="Certified" />
+                        <img src="/badges/3.png" alt="Certified" />
+                        <img src="/badges/4.png" alt="Certified" />
+                    </div>
+
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} A&B Contract Services. All rights reserved.</p>
             </div>
         </footer>
     );
