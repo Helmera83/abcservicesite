@@ -93,21 +93,9 @@ html {
 
 /* Hero Section */
 .hero {
-    display: flex;
     align-items: center;
-    padding: 2rem;
     position: relative;
     overflow: hidden;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(19, 17, 17, 0.73);
-    color: white;
-    padding: 5rem;
-    width: 100%;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -115,25 +103,34 @@ html {
         padding: 2rem;
     }
 }
-
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .hero-video {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+    width: 50%;
+    object-fit: contain;
+    padding: 2rem;
 
-.hero-content h1 {
+}
+.hg {
+    justify-items: center;
+    padding: 2rem;
+    margin-right: 2rem;
+}
+.hg h1 {
     font-size: clamp(1.5rem, 5vw, 3rem);
     margin-bottom: 1rem;
 }
 
-.hero-content p {
+.hg p {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Buttons */
@@ -142,7 +139,6 @@ html {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 2rem;
 }
 
 @media (max-width: 700px) {
@@ -150,6 +146,10 @@ html {
         gap: 1rem;
         align-items: center;
     }
+    .hero-video{
+        height: max-content;
+    }
+
 }
 
 .btn-gradient {
@@ -435,5 +435,74 @@ html {
 
     .footer-badges {
         justify-content: flex-start;
+    }
+}
+@media (max-width: 768px) {
+    /* Stack hero content vertically */
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding: 0;
+        position: relative;
+    }
+
+    .hg {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .cta-overlay {
+        width: 90%;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .cta-section {
+        font-size: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .services-modern {
+        padding: 40px 10px;
+    }
+
+    .footer-left,
+    .footer-right {
+        padding: 1rem 0.5rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-gradient,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        padding: 1rem;
+    }
+
+    .footer-right {
+        font-size: 1.25rem;
+    }
+
+    .slick-slider {
+        width: 100%;
     }
 }

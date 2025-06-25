@@ -11,7 +11,16 @@ const CallToAction = () => (
 
         <div className="cta-overlay">
             <p>24/7 Emergency HVAC Support</p>
-            <a href="#contact" className="btn-cta">Book Service Now</a>
+            <div>
+                <a
+                    href="https://forms.gle/YC4VYb5ZNt1PAVjGA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-cta"
+                >
+                    Book Now
+                </a>
+            </div>
         </div>
     </section>
 );
