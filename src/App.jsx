@@ -20,6 +20,7 @@ const App = () => {
           <Navbar/>
             <Hero />
             <main>
+                <hr className="hairline"/>
             <Services />
 
                 <Testimonial />

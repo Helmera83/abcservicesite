@@ -4,22 +4,22 @@ import "../styles/App.css";
 const Hero = () => {
     return (
         <section className="hero">
-                <div className="hero-container">
-                    <div>
-                        <video
-                            className="hero-video"
-                            src="/video.mp4"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                        />
-                    </div>
+            <div className="hero-container">
+                <div>
+                    <video
+                        className="hero-video"
+                        src="/video.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    />
+                </div>
 
 
                 <div className="hg">
-                    <h1>Your Comfort <br/>is Our Priority</h1>
-                    <p>Expert HVAC services 24/7</p>
+                    <h1>We Have Your HVAC Needs Covered</h1>
+                    <p>Keep your home or business comfortable all year long. From AC repairs to furnace installations, A&B Contract Services delivers fast, friendly, and expert HVAC solutions—right when you need them.</p>
                     <div className="button-group">
                         <div className="button-group">
                             <a
@@ -33,7 +33,8 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+
         </section>
     );
 };

@@ -91,47 +91,53 @@ html {
     }
 }
 
-/* Hero Section */
-.hero {
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+.hero-container {
+    display: flex;              /* put children side-by-side  */
+    align-items: center;        /* vertically center both     */
+    justify-content: space-between;
+    gap: 2rem;                  /* space between video & text */
+    padding: 3rem 2rem;         /* breathing room             */
 }
 
+.hero-video {
+    flex: 1 1 50%;              /* take up half the row, shrink if needed */
+    position: static;           /* let flexbox handle flow    */
+    width: 100%;                /* full width of its flex box */
+    height: auto;
+    max-width: 640px;           /* optional upper bound       */
+    object-fit: cover;
+    border-radius: 25px;        /* keep your existing rounding */
+    padding: 0;                 /* reset side padding         */
+}
+
+.hg {
+    flex: 1 1 50%;              /* other half of the row      */
+    max-width: 640px;           /* keeps text column readable */
+    text-align: left;           /* natural left alignment     */
+    margin: 0;                  /* override earlier margins   */
+}
+
+/* ===== HERO – SMALL SCREENS (unchanged) ===== */
 @media (max-width: 768px) {
-    .hero-content {
-        padding: 2rem;
+    .hero-container {           /* already stacks vertically  */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .hg {
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }
-.hero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    object-fit: contain;
-    padding: 2rem;
 
-}
-.hg {
-    justify-items: center;
-    padding: 2rem;
-    margin-right: 2rem;
-}
-.hg h1 {
-    font-size: clamp(2.5rem, 5vw, 3rem);
-    margin-bottom: 1rem;
-}
-
-.hg p {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    margin-bottom: 1rem;
-}
 
 /* Buttons */
 .button-group {
@@ -139,6 +145,7 @@ html {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 700px) {
@@ -146,10 +153,14 @@ html {
         gap: 1rem;
         align-items: center;
     }
-    .hero-video{
-        height: max-content;
-    }
 
+
+}
+.hairline {
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* Light gray line */
+    margin: 1rem 0;
 }
 
 .btn-gradient {
