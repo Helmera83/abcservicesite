@@ -113,8 +113,9 @@ html {
 .hg {
     flex: 1 1 50%;              /* other half of the row      */
     max-width: 640px;           /* keeps text column readable */
-    text-align: left;           /* natural left alignment     */
-    margin: 0;                  /* override earlier margins   */
+    text-align: center;           /* natural left alignment     */
+    margin: 0;
+    font-size: medium;/* override earlier margins   */
 }
 
 /* ===== HERO – SMALL SCREENS (unchanged) ===== */
@@ -133,7 +134,6 @@ html {
 
     .hg {
         padding: 1rem;
-        margin-top: 1rem;
         margin-bottom: 2rem;
     }
 }
@@ -150,6 +150,7 @@ html {
 
 @media (max-width: 700px) {
     .button-group {
+        padding-top: 1.5rem;
         gap: 1rem;
         align-items: center;
     }
