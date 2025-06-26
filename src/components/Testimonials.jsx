@@ -69,10 +69,10 @@ const settings = {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 800,
     responsive: [
         {
             breakpoint: 1024,

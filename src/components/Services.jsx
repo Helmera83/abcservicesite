@@ -38,15 +38,18 @@ const services = [
 const Services = () => (
     <section id="services" className="services-modern">
         <h2>Our Services</h2>
-        <div className="grid-services">
-            {services.map((s, i) => (
-                <div className="card-service" key={i}>
-                    <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{s.icon}</div>
-                    <h3>{s.title}</h3>
-                    <p>{s.desc}</p>
-                </div>
-            ))}
+        <div className=" service-section">
+            <div className="grid-services">
+                {services.map((s, i) => (
+                    <div className="card-service" key={i}>
+                        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{s.icon}</div>
+                        <h3>{s.title}</h3>
+                        <p>{s.desc}</p>
+                    </div>
+                ))}
+            </div>
         </div>
+
     </section>
 );
 

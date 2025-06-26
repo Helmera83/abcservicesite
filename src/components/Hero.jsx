@@ -1,40 +1,29 @@
 import React from 'react';
-import "../styles/App.css";
+import '../styles/App.css'; // Assume this contains styling for gradient overlay, animation, etc.
 
 const Hero = () => {
     return (
-        <section className="hero">
-            <div className="hero-container">
-                <div>
-                    <video
-                        className="hero-video"
-                        src="/video.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                    />
-                </div>
-
-
-                <div className="hg">
-                    <h1>We Have Your HVAC Needs Covered</h1>
-                    <p>Keep your home or business comfortable all year long. From AC repairs to furnace installations, A&B Contract Services delivers fast, friendly, and expert HVAC solutions—right when you need them.</p>
-                    <div className="button-group">
-                        <div className="button-group">
-                            <a
-                                href="https://forms.gle/YC4VYb5ZNt1PAVjGA"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn-gradient"
-                            >
-                                Book Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <section className="hero-section">
+            <div className="hero-background">
+                <img
+                    src="/cta.png" // Replace with actual path
+                    alt="HVAC technician"
+                    className="hero-image"
+                />
+                <div className="hero-overlay" />
             </div>
 
+            <div className="hero-content slide-in">
+                <h1>
+                    Reliable HVAC Installation & Repair
+                </h1>
+                <p>
+                    Trusted, timely, and tailored heating and cooling solutions.
+                </p>
+                <button className="cta-button">
+                    Get a Free Estimate
+                </button>
+            </div>
         </section>
     );
 };
