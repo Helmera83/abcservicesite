@@ -16,18 +16,15 @@ const App = () => {
     }, []);
 
     return (
-        <div className="container">
-            <Navbar/>
+        <> <main>
+          <Navbar/>
             <Hero />
-            <main>
-                <Services />
+            <Services />
                 <Testimonial />
                 <CallToAction />
-            </main>
             <Footer />
-        </div>
-
-
+        </main>
+        </>
     );
 };
 
